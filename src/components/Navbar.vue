@@ -479,6 +479,8 @@ onUnmounted(() => {
 
   .mobile {
     display: flex;
+    width: 60px;
+    height: auto;
   }
 
   .mobile-menu {
