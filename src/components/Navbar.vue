@@ -93,7 +93,16 @@ onUnmounted(() => {
         <img
           src="/fcps-desktop-logo.svg"
           alt="Fairfax County Public Schools"
-          class="logo"
+          class="logo desktop"
+          :class="{ 'logo-scrolled': isScrolled }"
+        />
+      </a>
+
+      <a href="/" class="logo-link">
+        <img
+          src="/fcps-mobile-logo.svg"
+          alt="Fairfax County Public Schools"
+          class="logo mobile"
           :class="{ 'logo-scrolled': isScrolled }"
         />
       </a>
@@ -260,6 +269,10 @@ onUnmounted(() => {
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
+
+  .mobile {
+    display: none;
+  }
 
 .logo.logo-scrolled {
   filter: none;
@@ -458,6 +471,14 @@ onUnmounted(() => {
 
   .menu-text {
     font-family: 'Open Sans', sans-serif;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
   }
 
   .mobile-menu {
