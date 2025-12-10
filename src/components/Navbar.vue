@@ -169,9 +169,7 @@ onUnmounted(() => {
           :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
         >
           <Menu :size="24" v-if="!isMobileMenuOpen" />
-          <span v-if="!isMobileMenuOpen" class="menu-text">MAIN MENU</span>
           <X :size="24" v-if="isMobileMenuOpen" />
-          <span v-if="isMobileMenuOpen" class="menu-text">CLOSE MENU</span>
         </button>
       </div>
     </div>
@@ -454,8 +452,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: #00566B;
-    color: white;
+    color: #00566B;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
