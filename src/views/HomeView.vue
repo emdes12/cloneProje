@@ -1,12 +1,19 @@
 <script setup>
+import HeroSection from '@/views/HeroSection.vue';
+import WhoWeAre from '@/views/WhoWeAre.vue';
+import FcpsStateSection from '@/views/FcpsStateSection.vue'
 import PryButton from '../components/PryButton.vue'
 import VideoSection from '@/components/VideoSection.vue'
 import EventSection from '@/components/EventSection.vue';
 import HowTo from '@/components/HowTo.vue';
 import FooterSection from '@/components/FooterSection.vue';
+
 </script>
 
 <template>
+  <HeroSection />
+  <WhoWeAre />
+  <FcpsStateSection />
   <main class="container">
     <!-- Actions/Review -->
     <div>
