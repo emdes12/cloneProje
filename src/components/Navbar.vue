@@ -462,8 +462,8 @@ onUnmounted(() => {
     transition: background-color 0.3s;
   }
 
-  .mobile-menu-btn:hover {
-    background-color: #004455;
+  .mobile-menu-btn {
+    background-color: inherit;
   }
 
   .menu-text {
